@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'DRMacroDefines'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of DRMacroDefines.'
+  s.summary          = '一些可以节省代码的宏定义，例如获取屏幕尺寸，加载xib，设置监听，发送消息等等。'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Dean_F/DRMacroDefines'
+  s.homepage         = 'https://github.com/DeanFs/DRMacroDefines'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Dean_F' => 'stone.feng1990@gmail.com' }
-  s.source           = { :git => 'https://github.com/Dean_F/DRMacroDefines.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/DeanFs/DRMacroDefines.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

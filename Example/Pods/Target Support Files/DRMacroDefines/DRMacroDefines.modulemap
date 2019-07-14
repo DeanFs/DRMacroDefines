@@ -1,0 +1,6 @@
+framework module DRMacroDefines {
+  umbrella header "DRMacroDefines-umbrella.h"
+
+  export *
+  module * { export * }
+}

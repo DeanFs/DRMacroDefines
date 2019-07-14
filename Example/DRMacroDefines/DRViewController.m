@@ -7,8 +7,13 @@
 //
 
 #import "DRViewController.h"
+#import <DRMacroDefines/DRMacroDefines.h>
 
 @interface DRViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
+
+@property (nonatomic, copy) void (^block)(NSInteger tapCount);
 
 @end
 
@@ -17,13 +22,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    kDRWeakSelf
+    self.block = ^(NSInteger tapCount) {
+        weakSelf.resultLabel.text = [NSString stringWithFormat:@"tap%ld", tapCount];
+    };
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)onDoneBlock:(UIButton *)sender {
+    sender.tag ++;
+    kDR_SAFE_BLOCK(self.block, sender.tag)
+}
+
+- (IBAction)onClean:(id)sender {
+    self.block = nil;
 }
 
 @end

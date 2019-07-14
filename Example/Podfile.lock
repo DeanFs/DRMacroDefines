@@ -1,0 +1,16 @@
+PODS:
+  - DRMacroDefines (0.1.0)
+
+DEPENDENCIES:
+  - DRMacroDefines (from `../`)
+
+EXTERNAL SOURCES:
+  DRMacroDefines:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DRMacroDefines: b42c82f55db6d146e4f60c4309a7c8f6969577e6
+
+PODFILE CHECKSUM: c51ac1dcd53fb523ac3c09bbe841d9aa5a344834
+
+COCOAPODS: 1.7.0.rc.1
