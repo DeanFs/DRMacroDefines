@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DRMacroDefines'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '一些可以节省代码的宏定义，例如获取屏幕尺寸，加载xib，设置监听，发送消息等等。'
 
 # This description is used to generate tags and improve search results.
