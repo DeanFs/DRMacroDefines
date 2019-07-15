@@ -37,7 +37,7 @@
 
 - (IBAction)onDoneBlock:(UIButton *)sender {
     sender.tag ++;
-    kDR_SAFE_BLOCK(self.block, sender.tag)
+    kDR_SAFE_BLOCK(self.block, sender.tag);
 }
 
 - (IBAction)onClean:(id)sender {
